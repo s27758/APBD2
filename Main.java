@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        int number2 = 10;
-        for (int i = 0; i < number2; i++) {
+        int number1 = 10;
+        for (int i = 0; i < number1; i++) {
         }
         int[] tab = new int[1];
-        tab[0] = number2;
+        tab[0] = number1;
         double average = Main.calculateAverage(tab);
         System.out.println("Average: " + average);
         int max = Main.findMax(tab);
