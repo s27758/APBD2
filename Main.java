@@ -5,6 +5,17 @@ public class Main {
         }
         int[] tab = new int[1];
         tab[0] = number;
-
+        double average = Main.calculateAverage(tab);
+        System.out.println("Average: " + average);
+    }
+    public static double calculateAverage(int[] numbers) {
+        if (numbers == null || numbers.length == 0) {
+            return 0.0;
+        }
+        int sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+        return (double) sum / numbers.length;
     }
 }
